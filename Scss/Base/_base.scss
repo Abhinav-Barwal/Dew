@@ -1,0 +1,60 @@
+html {
+    scroll-padding: 77px;
+    body {
+        margin: 0px;
+        padding: 0px;
+        text-decoration: none;
+        font-family: $fontFamily;
+        box-sizing: border-box;
+        section {
+            width: 100%;
+            padding: 60px 0px;
+            @media screen and (max-width: $breakPoint-md) {
+                padding: 30px 0px;
+            }
+            @media screen and (max-width: $breakPoint-lg) {
+                padding: 40px 0px;
+            }
+            .container {
+                max-width: 1320px;
+                width: 100%;
+                margin: auto;
+                @media screen and (max-width: $breakPoint-xl) {
+                    max-width: 1140px;
+                }
+                @media screen and (max-width: $breakPoint-lg) {
+                    max-width: 960px;
+                }
+                @media screen and (max-width: $breakPoint-md) {
+                    max-width: 720px;
+                }
+                @media screen and (max-width: $breakPoint-sm) {
+                    max-width: 540px;
+                }
+            }
+        }
+        .scroll-icon {
+            position: fixed;
+            right: 15px;
+            bottom: 15px;
+            z-index: 999;
+            background-color: $secondary;
+            text-decoration: none;
+            color: $white;
+            width: 40px;
+            height: 40px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:hover {
+                background-color: rgba(255, 74, 23,0.7);
+            }
+            i {
+                font-size: 24px;
+                line-height: 0;
+                font-weight: 500;
+            }
+        }
+    }
+}

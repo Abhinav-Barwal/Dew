@@ -1,0 +1,73 @@
+.heroSection {
+    .heroContainer {
+        min-height: 668px;
+        max-width: 1920px;
+        width: 100%;
+        background-image: url('../../IMG/hero-bg.jpg');
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        &::before {
+            content: " ";
+            position: absolute;
+            max-width: 1920px;
+            width: 100%;
+            min-height: 668px;
+            background-color: color-mix(in srgb, #000910, transparent 30%);
+        }
+        .heroCont {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 2;
+            h2 {
+                color: $white;
+                text-align: center;
+            }
+            p {
+                color: $white;
+                font-size: 24px;
+                text-align: center;
+            }
+            .herobtns {
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @media screen and (max-width: $breakPoint-sm) {
+                    flex-direction: column;
+                    width: 100%;
+                }
+                .secondaryBtn {
+                    @media screen and (max-width: $breakPoint-sm) {
+                        order: 2;
+                    }                }
+                .herovideoBtn {
+                    text-decoration: none;
+                    color: $secondary;
+                    display: flex;
+                    align-items: center;
+                    margin-left: 20px;
+                    @media screen and (max-width: $breakPoint-sm) {
+                        margin-left: 0px;
+                        order: 1;
+                    }
+                    &:hover, &:hover span {
+                        color: #d93204;
+                        transition: 0.5s;
+                    }
+                    i {
+                        font-size: 40px;
+                    }
+                    span {
+                        font-size: 16px;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}

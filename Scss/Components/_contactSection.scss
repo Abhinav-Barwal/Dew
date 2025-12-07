@@ -1,0 +1,72 @@
+.contact-section {
+    .contact-Container {
+        .topCont {
+            h2 {
+                @include h2afterBar;
+            }
+
+            p {
+                font-size: 36px;
+                color: $black;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .container {
+        .contact-Row {
+            .contactcol-left {
+                margin-top: 24px;
+
+                .cont-Row {
+                    .cont-col {
+                        margin-top: 24px;
+
+                        .address {
+                            @include box;
+                        }
+                    }
+                }
+            }
+
+            .contactcol-right {
+                margin-top: 24px;
+
+                .form {
+                    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+                    padding: 30px;
+
+                    .right-Row {
+                        .right-col {
+
+                            input,
+                            textarea {
+                                padding: 10px 15px;
+                                font-size: 14px;
+                                box-shadow: none;
+                                width: 100%;
+                                color: $black;
+                                border: 1px solid rgb(180, 179, 179, 0.4);
+
+                                &:focus {
+                                    border: 1px solid $secondary;
+                                    border-radius: 0;
+                                    outline: none;
+                                }
+                            }
+                        }
+
+                        .right-colbtn {
+                            display: flex;
+                            justify-content: center;
+
+                            .secondaryBtn {
+                                border-radius: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

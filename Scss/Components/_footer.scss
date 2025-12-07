@@ -1,0 +1,161 @@
+.footer {
+    background-color: #000910;
+    .foot-container {
+        .footRow {
+            .foot-about {
+                margin: 24px 0px 30px 0px;
+                p {
+                    font-size: 14px;
+                    font-family: "Raleway",  sans-serif;
+                    color: $white;
+                }
+                .footlogo {
+                    text-decoration: none;
+                    margin-bottom: 25px;
+                    display: block;
+                    span {
+                        font-size: 26px;
+                        font-weight: 700;
+                        letter-spacing: 1px;
+                        color: $white;
+                    }
+                }
+                .footer-contact {
+                    padding-top: 16px;
+                    p {
+                        color: rgb(225, 224, 224);
+                        margin-bottom: 5px;
+                        strong {
+                            color: $white;
+                        }
+                        span {
+                            color: rgb(225, 224, 224);
+                        }
+                    }
+                }
+                .footer-social {
+                    margin-top: 24px;
+                    a {
+                        margin-right: 10px;
+                        text-decoration: none;
+                        display: inline-block;
+                        i {
+                            width: 40px;
+                            height: 40px;
+                            font-size: 16px;
+                            border-radius: 50%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border: 1px solid rgb(150, 148, 148);
+                            color:rgb(150, 148, 148);
+                            color: $white;
+                            &:hover {
+                                color: $secondary;
+                                border: 1px solid $secondary;
+                            }
+                        }
+                    }
+                }
+            }
+            .foot-link {
+                margin: 24px 0px 30px 0px;
+                h4 {
+                    font-size: 16px;
+                    font-weight: 600;
+                    padding-bottom: 12px;
+                    color: $white;
+                }
+                ul {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    li {
+                        padding: 10px 0px;
+                        display: flex;
+                        align-items: center;
+                        i {
+                            padding-right: 3px;
+                            font-size: 13px;
+                            color: $secondary;
+                        }
+                        a {
+                            display: inline-block;
+                            color: $white;
+                            cursor: pointer;
+                            text-decoration: none;
+                            color:  rgb(174, 173, 173);
+                            &:hover {
+                                color: $secondary;
+                            }
+                        }
+                    }
+                }
+            }
+            .foot-newsletter {
+                margin: 24px 0px 30px 0px;
+                color: $white;
+                h4 {
+                    font-size: 16px;
+                    font-weight: 600;
+                    padding-bottom: 12px;
+                }
+                p {
+                    margin-top: 0;
+                    margin-bottom: 16px;
+                }
+                .subscribe {
+                    margin: 30px 0px 15px 0px;
+                    border-radius: 6px;
+                    background-color: $secondary;
+                    cursor: pointer;
+                    transition: 0.3s ease;
+                    display: flex;
+                    &:hover {
+                        background-color: rgba(255, 74, 23,0.9);
+                    }
+                    input {
+                        width: 100%;
+                        padding: 10px 15px;
+                        border-top-left-radius: 6px;
+                        border-bottom-left-radius: 6px;
+                        border: 1px solid rgb(179, 177, 177);
+                        background-color: #000910;
+                        border-right: 1px solid $secondary;
+                        &:focus {
+                            border: 1px solid $secondary;
+                            outline: 0;
+                        }
+                    }
+                    span {
+                        display: inline-block;
+                        color: $white;
+                        margin: auto;
+                        padding: 0px 20px;
+                    }
+                }
+            }
+        }
+        .copyright {
+            padding: 25px 0px;
+            border-top: 1px solid #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            p {
+                color: $white;
+                font-size: 14px;
+                margin-bottom: 0px;
+            }
+            .credit {
+                font-size: 14px;
+                color: $white;
+                margin-top: 6px;
+                span {
+                    color: $secondary;
+                }
+            }
+        }
+    }
+}

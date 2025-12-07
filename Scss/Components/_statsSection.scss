@@ -1,0 +1,39 @@
+.statsSection {
+    background-color: #f1f4fa;
+    .containerStats {
+        width: 100%;
+        .statsRow {
+            .statsCol {
+                // margin-top: 24px;
+                box-sizing: border-box;
+                @media screen and (max-width: $breakPoint-md) {
+                    width: 100%;
+                }
+                .statsCont {
+                    padding: 30px;
+                    background-color: $white;
+                    box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+                    display: flex;
+                    justify-content: center;
+                    .leftStat {
+                        font-size: 60px;
+                        display: flex;
+                        align-items: center;
+                        color: $secondary;
+                    }
+                    .rightStat {
+                        margin-left: 10px;
+                        p {
+                            font-family: "Raleway",  sans-serif;
+                        }
+                        span {
+                            font-family: sans-serif;
+                            font-size: 36px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

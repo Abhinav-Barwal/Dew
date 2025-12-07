@@ -1,0 +1,21 @@
+.clientsSection {
+    padding: 20px 0px;
+    background-color: #f1f4fa;
+    .clientsContainer {
+        .clientsRow {
+            .clientsCol {
+                .images {
+                    padding: 20px 40px;
+                    max-width: 90%;
+                    filter: grayscale(100);
+                    opacity: 0.5;
+                    &:hover {
+                        filter: none;
+                        transition: 0.5s ease-in-out;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}

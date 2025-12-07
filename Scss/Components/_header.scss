@@ -1,0 +1,100 @@
+.header {
+    position: fixed;
+    background-color: $primary;
+    padding: 20px 0px;
+    z-index: 999;
+    .headContainer {
+        margin: auto;
+        .navbar {
+            max-width: 1320px;
+            width: 100%;
+            .container-fluid {
+                .respoBtn {
+                    display: none;
+                    @media screen and (max-width: $breakPoint-lg){
+                        display: block;
+                        margin-left: auto;
+                        margin-right: 10px;
+                    }
+                }
+                .navbar-toggler {
+                    background-color: $white;
+                }
+                .collapse {
+                    max-width: 830px;
+                    .navbar-nav {
+                        .nav-li {
+                            .nav-link-a {
+                                @include hoverBar;
+                            }
+                            .dropdown-menu {
+                                color: $black;
+                                font-family: $nav-font;
+                                min-width: 200px;
+                                @media screen and (min-width: $breakPoint-lg) {
+                                    display: none;
+                                }
+                                li {
+                                    .dropdown-item {
+                                        padding: 10px 20px;
+                                    }
+                                    &:hover {
+                                        background-color: $white;
+                                    }
+                                    &:hover .dropdown-item {
+                                        color: $secondary;
+                                        background-color: $white;
+                                    }
+                                }
+                                .dropdown2 {
+                                    &:hover .dropdown-menu2 {
+                                        display: block;
+                                    }
+                                    
+                                    .dropdown-toggle2 {
+                                        padding: 4px 20px;
+                                        color: #212529;
+                                    }
+                                    .dropdown-menu2 {
+                                        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+                                        display: none;
+                                        margin-left: 150px;
+                                        margin-right: 5px;
+                                        @media screen and (min-width: $breakPoint-lg) {
+                                            top: 0px;
+                                            left: -199px;
+                                            width: 10rem;
+                                            margin: 0px;
+                                        }
+                                        
+                                        li {
+                                            a {
+                                                color:  #212529;
+                                                padding: 10px 20px;
+                                                &:hover {
+                                                    color: $secondary;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .dropdown {
+                            @media screen and (min-width: $breakPoint-lg) {
+                                &:hover .dropdown-menu {
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                    .lgBtn {
+                        @media screen and (max-width: $breakPoint-lg) {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

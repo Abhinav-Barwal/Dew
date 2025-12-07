@@ -1,0 +1,97 @@
+.testimonialSection {
+    padding: 0px;
+    .testimonialContainer {
+        max-width: 1920px;
+        min-height: 490px;
+        width: 100%;
+        background-image: url('../../IMG/testimonials-bg.jpg');
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        &::before {
+            content: " ";
+            position: absolute;
+            inset: 0;
+            background-color: color-mix(in srgb, #000910, transparent 30%);
+        }
+
+        .testicontent {
+            max-width: 1320px;
+            min-height: 330px;
+            .swiper {
+                width: 100%;
+                min-height: 330px;
+                height: 100%;
+                padding: 0px 12px;
+                position: relative;
+
+                .swiper-wrapper {
+                    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+                    height: 100%;
+                    .swiper-slide {
+                        text-align: center;
+                        font-size: 18px;
+                        background: transparent;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: #fff;
+                        height: 100%;
+
+                        .testimonial-item {
+                            .testi-Img {
+                                border-radius: 50%;
+                                height: 92px;
+                                width: 92px;
+                                border: 6px solid rgba(225, 225, 225, 0.2);
+                                margin-bottom: 20px;
+                            }
+
+                            h3 {
+                                font-size: 20px;
+                                font-weight: bold;
+                                margin: 10px, 0px, 5px, 0px;
+                                color: $white;
+                            }
+
+                            h4 {
+                                font-size: 14px;
+                                margin: 0px 0px 15px 0px;
+                                color:  rgba(225, 225, 225, 0.7);
+                            }
+
+                            .stars {
+                                margin-bottom: 5px;
+                                color: rgb(252, 252, 53);
+                            }
+                            p {
+                                padding: 0px 0px 35px 0px;
+                                @media screen and (max-width: $breakPoint-lg) {
+                                    padding: 0px;
+                                    padding-bottom: 35px; 
+                                }
+                                i {
+                                    font-size: 30px;
+                                    color: rgb(161, 159, 159);
+                                }
+                            }
+                        }
+                    }
+                }
+                .swiper-pagination {
+                    .swiper-pagination-bullet {
+                        width: 12px;
+                        height: 12px;
+                        background-color: grey;
+                    }
+                    .swiper-pagination-bullet-active {
+                        background-color: $white;
+                    }
+                }
+            }
+        }
+    }
+}

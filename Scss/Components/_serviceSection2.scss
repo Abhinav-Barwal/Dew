@@ -1,0 +1,66 @@
+.serviceSection2 {
+    background-color: #f1f4fa;
+
+    .serviceContainer2 {
+        .topCont {
+            h2 {
+                @include h2afterBar;
+            }
+
+            p {
+                font-size: 36px;
+                color: $black;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .container {
+        .bottomRow {
+            .bottomCol {
+                margin-top: 24px;
+
+                .bottomCont {
+                    padding: 30px;
+                    display: flex;
+                    background-color: $white;
+                    border: 1px solid rgb(220, 217, 217);
+                    cursor: pointer;
+
+                    &:hover {
+                        border: 1px solid $secondary;
+                        transition: 0.3s ease;
+                    }
+
+                    &:hover .rightBox h4 a {
+                        color: $secondary;
+                        transition: 0.3s ease;
+                    }
+
+                    i {
+                        font-size: 36px;
+                        margin-right: 30px;
+                        color: $secondary;
+                    }
+
+                    .rightBox {
+                        h4 {
+                            font-size: 20px;
+                            margin-bottom: 15px;
+                            font-weight: 700;
+
+                            a {
+                                color: $black;
+                                text-decoration: none;
+                            }
+                        }
+
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

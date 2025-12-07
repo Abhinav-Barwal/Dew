@@ -1,0 +1,47 @@
+.aboutSection {
+    .aboutContainer {
+        padding: 0px 12px;
+        .aboutRow {
+            .aboutleftCol {
+                @media screen and (max-width: $breakPoint-lg) {
+                    width: 100%;
+                }
+               .aboutImg {
+                width: 100%;
+                height: auto;
+                border-radius: 20px;
+               } 
+            }
+            .aboutrightCol {
+                @media screen and (max-width: $breakPoint-lg) {
+                    width: 100%;
+                    margin-top: 24px;
+                }
+                .rightcontent {
+                    padding-left: 48px;
+                    @media screen and (max-width: $breakPoint-lg) {
+                        padding: 0px;
+                    }
+                    .topPahra {
+                        color: rgb(160, 158, 158);
+                        font-style: italic;
+                    }
+                    ul {
+                        list-style: none;
+                        li {
+                            i {
+                                font-size: 25px;
+                                color: $secondary;
+                            }
+                        }
+                    }
+                    .aboutImg {
+                        width: 100%;
+                        height: auto;
+                        border-radius: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

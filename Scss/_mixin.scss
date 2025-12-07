@@ -1,0 +1,93 @@
+// Nav Menu 
+
+@mixin hoverBar {
+    font-size: 13px;
+    font-weight: 500;
+    color: $white;
+    position: relative;
+    margin: 0px 10px;
+    font-family: $nav-font;
+    @media screen and (max-width: $breakPoint-lg) {
+        &:hover {
+            color: $secondary;
+            transform: 0.5s;
+        }
+        &.active {
+            color: $secondary;
+            width: 100%;
+        }
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        bottom: -6px;
+        left: 0px;
+        width: 0px;
+        visibility: hidden;
+        background-color: $secondary;
+        transition: all 0.3s ease-in-out 0s;
+        @media screen and (max-width: $breakPoint-lg) {
+            display: none;
+        }
+    }
+    &:hover::before {
+        visibility: visible;
+        width: 100%;
+    }
+    // &.active::before {
+    //     width: 100%;
+    //     // visibility: visible;
+    // }
+}
+
+// Section before Bar
+
+@mixin h2afterBar {
+    font-size: 14px;
+    position: relative;
+    color: rgb(202, 202, 202);
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    &::after {
+        content: " ";
+        position: absolute;
+        height: 1px;
+        width: 120px;
+        background-color: $secondary;
+        margin: 9px 10px;
+        display: inline-block;
+    }
+}
+
+// Contact Section
+
+@mixin box {
+    padding: 24px 0px 30px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    i {
+        font-size: 24px;
+        width: 56px;
+        height: 56px;
+        color: $secondary;
+        border: 2px dotted $secondary;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h3 {
+        font-size: 18px;
+        font-weight: 700;
+        margin: 10px 0px;
+        color: $black;
+    }
+    p {
+        padding: 0px;
+        margin-bottom: 0px;
+        font-size: 14px;
+    }
+}

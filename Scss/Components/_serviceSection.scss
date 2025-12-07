@@ -1,0 +1,94 @@
+.serviceSection {
+    .serviceContainer {
+        .topCont {
+            h2 {
+                @include h2afterBar;
+            }
+
+            p {
+                font-size: 36px;
+                color: $black;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .container {
+        .bottomRow {
+            .bottomCol {
+                .content {
+                    &:hover .serviceImg img {
+                        transform: scale(1.2, 1.2);
+                        transition: 0.5s ease-in-out;
+                    }
+
+                    &:hover .serviceinnerCont .icon {
+                        border: 2px solid $secondary;
+                        background-color: $white;
+                        color: $secondary;
+                        transition: 0.3s ease-in-out;
+                    }
+
+                    &:hover .serviceinnerCont .icon i,
+                    &:hover .serviceinnerCont a {
+                        color: $secondary;
+                    }
+
+                    .serviceImg {
+                        border-radius: 8px;
+                        overflow: hidden;
+                        outline: 1px;
+                    }
+
+                    .serviceinnerCont {
+                        margin: -100px 30px 0px 30px;
+                        padding: 50px 30px;
+                        border-radius: 8px;
+                        box-shadow: 0px 0 25px rgba(0, 0, 0, 0.1);
+                        position: relative;
+                        background-color: rgba(255, 255, 255, 0.8);
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        cursor: pointer;
+
+                        .icon {
+                            max-width: 72px;
+                            width: 100%;
+                            min-height: 72px;
+                            background-color: $secondary;
+                            border: 6px solid $white;
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin-bottom: 20px;
+                            font-size: 28px;
+                            position: absolute;
+                            top: -36px;
+                            left: 50%;
+                            transform: translate(-50%);
+
+                            i {
+                                color: $white;
+                            }
+                        }
+
+                        a {
+                            text-decoration: none;
+                            color: $black;
+                            font-weight: 600;
+                            font-size: 22px;
+                            margin-bottom: 20px;
+                        }
+
+                        p {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
